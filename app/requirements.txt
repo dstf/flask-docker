@@ -1,0 +1,8 @@
+Flask
+gunicorn
+flask_restful
+pymongo
+bcrypt
+spacy
+Werkzeug
+
