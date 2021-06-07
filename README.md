@@ -1,4 +1,5 @@
-# Template for deploying Flask + Gunicorn + Nginx + SSL self-signed + Mongodb inside Docker
+# Template for Installing and deploying Flask + Gunicorn + Nginx + SSL self-signed + Mongodb inside a Docker container.
+
 
 
 
