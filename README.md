@@ -9,11 +9,11 @@
 git clone https://github.com/dstf/flask-docker.git
 ```
 
-- Change the $domain inside the file:
+- Change the $domain inside the file named:
 ```
 ./nginx./app.conf
 ```
-  and the root password for your database 
+  and the root password for your database inside:
 ```
 ./docker-compose.yml
 ```
