@@ -28,7 +28,7 @@ services:
 
      db:
 
-       image: mongo:4.0.8
+       image: mongo
        container_name: mongo
        restart: unless-stopped
        command: mongod --auth
