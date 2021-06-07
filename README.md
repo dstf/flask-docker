@@ -33,6 +33,11 @@ sh enviroment.sh
 ![](https://06a7f2c2-5c56-40d7-aded-6455af08391b.es-mad1.upcloudobjects.com/project001/github/simpleAPI.gif)
 
 
+## Self-SSL method:
+```
+curl --insecure -i https:// 
+```
+
 ## Curl example 
 GET
 ```
@@ -46,7 +51,4 @@ DELETE
 ```
 curl -i -H "Content-Type: application/json" -X DELETE -d '{"username":"dstf", "message": "hello word"}' https://api.fixerupper.me/v1
 ```
-Self-SSL method:
-```
-curl --insecure -i https:// 
-```
+
