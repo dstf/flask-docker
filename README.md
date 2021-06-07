@@ -36,7 +36,7 @@ DELETE
 ```
 curl -i -H "Content-Type: application/json" -X DELETE -d '{"username":"dstf", "message": "hello word"}' https://api.fixerupper.me/v1
 ```
-Sel-SSL method:
+Self-SSL method:
 ```
 curl --insecure -i https:// 
 ```
