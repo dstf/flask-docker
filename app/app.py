@@ -11,8 +11,8 @@ app = Flask(__name__)
 api = Api(app)
 
 client = MongoClient('mongodb://db:27017',
-                  username='davide',
-                  password='davide,123')
+                  username='root',
+                  password='rootpassword')
 db = client.app_db
 
 
@@ -52,7 +52,6 @@ def create_dev():
     item = {
             'username': data['username'],
             'message': data['message']
-           # 'message': data['message']
     }
     db.todo.insert_one(item)
 
