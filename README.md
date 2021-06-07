@@ -13,7 +13,7 @@ git clone https://github.com/dstf/flask-docker.git
 ```
 ./nginx./app.conf
 ```
- and the root password for your database 
+  and the root password for your database 
 ```
 ./docker-compose.yml
 ```
