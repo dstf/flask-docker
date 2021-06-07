@@ -6,9 +6,9 @@ from pymongo import MongoClient
 from flask_pymongo import PyMongo
 from bson.json_util import dumps
 
-
 app = Flask(__name__)
 api = Api(app)
+
 client = MongoClient('mongodb://db:27017',
                  username='root',
                  password='rootpassword')
@@ -18,16 +18,12 @@ db = client.app_db
 
 @app.route("/")
 def get_initial_response():
-    """Welcome message for the API."""
-    # Message to the user
     message = {
         'apiVersion': 'v1.0',
         'status': '200',
-        'message': 'API.fixerupper.me /v1 is Up and Running'
+        'message': 'API /v1 is Up and Running'
     }
-    # Making the message looks good
     resp = jsonify(message)
-    # Returning the object
     return resp
 
 
@@ -82,20 +78,6 @@ def deleteTodo():
         message='To-do saved successfully!'
     ), 201
 
-
-
-
-@app.route('/login', methods=['POST'])
-def login():
-    user_records = db.user.find({'username': request.json['username']})
-    return dumps(user_records)
-
-
-@app.route('/v2', methods=["POST"])
-def testpost():
-     input_json = request.get_json(force=True) 
-     dictToReturn = {'text':input_json['text']}
-     return jsonify(dictToReturn)
 
 
 
