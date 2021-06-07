@@ -9,9 +9,13 @@
 git clone https://github.com/dstf/flask-docker.git
 ```
 
-- Change the $domain inside 
+- Change the $domain inside the file
 ```
 ./nginx./app.conf
+```
+ and the root password for your database 
+```
+./docker-compose.yml
 ```
 - Run the script installing (Docker & Docker compose)
 ```
