@@ -28,7 +28,7 @@ def get_initial_response():
 
 
 @app.route('/v1')
-def todo():
+def dev():
     _todos = db.todo.find()
 
     item = {}
@@ -47,7 +47,7 @@ def todo():
     )
 
 @app.route('/v1', methods=['POST'])
-def createTodo():
+def create_dev():
     data = request.get_json(force=True)
     item = {
             'username': data['username'],
@@ -64,7 +64,7 @@ def createTodo():
 
 
 @app.route('/v1', methods=['DELETE'])
-def deleteTodo():
+def delete_dev():
     data = request.get_json(force=True)
     item = {
             'username': data['username'],
