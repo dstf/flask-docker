@@ -6,7 +6,7 @@ openssl req -new -x509 -days 365 -nodes -newkey rsa:2048  \
   -out /etc/ssl/certs/nginx-selfsigned.crt \
   -keyout /etc/ssl/private/nginx-selfsigned.key \
   -subj "/C=uk/ST=London/OU=IT/CN=fixerupper.me"
-  
+
 openssl dhparam -out /etc/nginx/dhparam.pem 4096
 
 
