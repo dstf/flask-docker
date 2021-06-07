@@ -10,14 +10,14 @@ git clone https://github.com/dstf/flask-docker.git
 ```
 
 - Change the $domain inside ./nginx./app.conf
-
-
+```
+```
 - Run the script installing (Docker & Docker compose)
 ```
 sh install-docker.sh
 ```
 
-run the enviroment
+- Run the enviroment
 ```
 sh enviroment.sh
 ```
