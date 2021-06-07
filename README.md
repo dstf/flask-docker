@@ -1,15 +1,22 @@
-# Template for Installing and deploying a simple API app with Flask + Gunicorn + Nginx + SSL self-signed + Mongodb inside a Docker container.
+# Template for Installing and deploying a simple API app with Flask + Gunicorn + Nginx + SSL self-signed + Mongodb inside a Docker container.(Debian)
 
 
 
 ## Installation
 
+Clone the repository
 ```
+git clone https://github.com/dstf/flask-docker.git
+```
+Run the script installing (Docker & Docker compose)
+```
+sh install-docker.sh
 ```
 
-
-
-
+run the enviroment
+```
+sh enviroment.sh
+```
 
 
 
@@ -17,12 +24,15 @@
 
 
 ## Curl example 
+GET
 ```
 curl  -i https://api.fixerupper.me/
 ```
+POST
 ```
 curl  -i -H "Content-Type: application/json" -X POST -d '{"username":"dstf", "message": "hello word"}' https://api.fixerupper.me/v1 
 ```
+DELETE
 ```
 curl -i -H "Content-Type: application/json" -X DELETE -d '{"username":"dstf", "message": "hello word"}' https://api.fixerupper.me/v1
 ```
