@@ -6,13 +6,13 @@ from pymongo import MongoClient
 from flask_pymongo import PyMongo
 from bson.json_util import dumps
 
+
 app = Flask(__name__)
 api = Api(app)
 
 client = MongoClient('mongodb://db:27017',
-                 username='root',
-                 password='rootpassword')
-
+                  username='davide',
+                  password='davide,123')
 db = client.app_db
 
 
@@ -21,7 +21,7 @@ def get_initial_response():
     message = {
         'apiVersion': 'v1.0',
         'status': '200',
-        'message': 'API /v1 is Up and Running'
+        'message': 'API is Up and Running on /v1 folder'
     }
     resp = jsonify(message)
     return resp
@@ -83,5 +83,7 @@ def deleteTodo():
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0", debug=True)
+
+
 
 
