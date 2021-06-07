@@ -24,10 +24,3 @@ curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compo
 chmod +x /usr/local/bin/docker-compose
 
 ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
-
-apt update && apt upgrade
-echo "killing old docker processes"
-docker-compose rm -fs
-
-echo "building docker containers"
-docker-compose up --build -d
