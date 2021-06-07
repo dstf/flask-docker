@@ -5,8 +5,7 @@
 
 
 
-Inline-style: 
-![alt text](https://06a7f2c2-5c56-40d7-aded-6455af08391b.es-mad1.upcloudobjects.com/project001/github/simpleAPI.gif "Logo Title Text 1")
+![](https://06a7f2c2-5c56-40d7-aded-6455af08391b.es-mad1.upcloudobjects.com/project001/github/simpleAPI.gif)
 
 
 curl  -i https://api.fixerupper.me/
