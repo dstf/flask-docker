@@ -26,7 +26,6 @@ services:
        networks:
            - frontend
 
-
      db:
 
        image: mongo:4.0.8
@@ -41,6 +40,7 @@ services:
            MONGODB_DATA_DIR: /data/db
        networks:
            - backend
+           
 networks:
       frontend:
         driver: bridge
