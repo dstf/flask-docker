@@ -31,8 +31,6 @@ def get_initial_response():
     return resp
 
 
-
-
 @app.route('/v1')
 def todo():
     _todos = db.todo.find()
@@ -41,8 +39,9 @@ def todo():
     data = []
     for todo in _todos:
         item = {
-            'id': str(todo['_id']),
-            'todo': todo['todo']
+                'id': str(todo['_id']),
+                'username': todo['username'],
+                'message': todo['message']
         }
         data.append(item)
 
@@ -55,7 +54,9 @@ def todo():
 def createTodo():
     data = request.get_json(force=True)
     item = {
-        'todo': data['todo']
+            'username': data['username'],
+            'message': data['message']
+           # 'message': data['message']
     }
     db.todo.insert_one(item)
 
@@ -66,14 +67,13 @@ def createTodo():
 
 
 
-
-
-
 @app.route('/v1', methods=['DELETE'])
 def deleteTodo():
     data = request.get_json(force=True)
     item = {
-        'todo': data['todo']
+            'username': data['username'],
+            'message': data['message']
+
     }
     db.todo.delete_one(item)
 
