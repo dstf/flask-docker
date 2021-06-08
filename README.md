@@ -15,7 +15,7 @@ git clone https://github.com/dstf/flask-docker.git
 ```
   and the root password for your database inside:
 ```
-./docker-compose.yml
+./docker-compose.yml and ./app/app.py
 ```
 
 - Run the script installing (Docker & Docker compose)
