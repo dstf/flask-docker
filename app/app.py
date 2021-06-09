@@ -74,7 +74,7 @@ def delete_dev():
 
     return jsonify(
         status=True,
-        message='To-do saved successfully!'
+        message='deleted successfully!'
     ), 201
 
 
